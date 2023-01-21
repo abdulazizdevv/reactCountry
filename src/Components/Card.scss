@@ -1,14 +1,22 @@
 *{
     font-family: sans-serif;
 }
-.hero{
-    margin-top: 50px;
+/* // .hero{
+//     margin-top: 50px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 35px;
+//     justify-content: center;
+// } */
+.all-cards{
+    margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
-    gap: 35px;
-    justify-content: center;
+    gap: 25px;
+    justify-content: space-around;
 }
 .card{
+    
     padding: 10px;
     border: 1px solid rgb(180, 177, 177);
     width: 320px;

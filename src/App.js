@@ -1,16 +1,29 @@
 import Header from "./Components/Header";
 import Form from "./Components/Form";
 import Card from "./Components/Card";
-import "./Components/Header.css";
-import "./Components/Country.css";
-import "./Components/Card.css";
+import data from "./data";
+import "./Components/Header.scss";
+import "./Components/Country.scss";
+import "./Components/Card.scss";
 
 function App() {
   return (
     <>
       <Header />
       <Form />
-      <Card />
+      <div className="all-cards">
+        {data.map((item) => {
+          return (
+            <Card
+              name={item.name}
+              img={item.img}
+              population={item.population}
+              capital={item.capital}
+              region={item.region}
+            />
+          );
+        })}
+      </div>
     </>
   );
 }
